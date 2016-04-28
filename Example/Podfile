@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PSFoundation_Example', :exclusive => true do
+  pod 'PSFoundation', :path => '../'
+end
+
+target 'PSFoundation_Tests', :exclusive => true do
+  pod 'PSFoundation', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
