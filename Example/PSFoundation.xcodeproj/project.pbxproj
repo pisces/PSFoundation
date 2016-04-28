@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7C0AFCA8A171149B22B272 /* libPods-PSFoundation_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68696167906BD05BD80D7BCD /* libPods-PSFoundation_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,8 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C2A85AD68EC1A8AEB0E46F32 /* Pods_PSFoundation_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A04238E757E55805F86A08 /* Pods_PSFoundation_Example.framework */; };
-		DD0192E0C294E8568002124A /* Pods_PSFoundation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A713B3FA9C6B57EA43195E5 /* Pods_PSFoundation_Tests.framework */; };
+		C525152E7F40B20156D17F84 /* libPods-PSFoundation_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FFEA056D377260ADCAAAD6 /* libPods-PSFoundation_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A713B3FA9C6B57EA43195E5 /* Pods_PSFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSFoundation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FFEA056D377260ADCAAAD6 /* libPods-PSFoundation_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSFoundation_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		484AA8F2DD77C09A13D30FD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PSFoundation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSFoundation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,7 +57,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		83A04238E757E55805F86A08 /* Pods_PSFoundation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSFoundation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68696167906BD05BD80D7BCD /* libPods-PSFoundation_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSFoundation_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		889B2FDA2362BDABBC7397A9 /* PSFoundation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PSFoundation.podspec; path = ../PSFoundation.podspec; sourceTree = "<group>"; };
 		A190FF1D2E41E52414799762 /* Pods-PSFoundation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSFoundation_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSFoundation_Example/Pods-PSFoundation_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				C2A85AD68EC1A8AEB0E46F32 /* Pods_PSFoundation_Example.framework in Frameworks */,
+				5E7C0AFCA8A171149B22B272 /* libPods-PSFoundation_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				DD0192E0C294E8568002124A /* Pods_PSFoundation_Tests.framework in Frameworks */,
+				C525152E7F40B20156D17F84 /* libPods-PSFoundation_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				83A04238E757E55805F86A08 /* Pods_PSFoundation_Example.framework */,
-				2A713B3FA9C6B57EA43195E5 /* Pods_PSFoundation_Tests.framework */,
+				68696167906BD05BD80D7BCD /* libPods-PSFoundation_Example.a */,
+				33FFEA056D377260ADCAAAD6 /* libPods-PSFoundation_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PSFoundation/PSFoundation-Prefix.pch";
 				INFOPLIST_FILE = "PSFoundation/PSFoundation-Info.plist";
@@ -530,7 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PSFoundation/PSFoundation-Prefix.pch";
 				INFOPLIST_FILE = "PSFoundation/PSFoundation-Info.plist";

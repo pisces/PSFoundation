@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F79116AEAA44E980D576691047BD430B'
+               BlueprintIdentifier = '21E2E24968AA7CD0FBF40B491F5D5745'
                BlueprintName = 'PSFoundation'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PSFoundation.framework'>
+               BuildableName = 'libPSFoundation.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -26,17 +26,17 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/pisces/PSFoundation.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'PSFoundation/Classes/**/*'
-
+#  s.module_map = "module/module.modulemap"
   s.resource_bundles = {
    'PSFoundation' => ['PSFoundation/Assets/*']
   }
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'Foundation', 'CoreData'
+  s.frameworks = 'Foundation'
 
   s.xcconfig = {
     'OTHER_LDFLAGS' => '$(inherited) -ObjC -lsqlite3 -lz'
