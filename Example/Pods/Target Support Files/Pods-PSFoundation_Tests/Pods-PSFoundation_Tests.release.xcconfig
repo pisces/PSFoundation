@@ -1,8 +1,6 @@
-EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/FBSnapshotTestCase" "$CONFIGURATION_BUILD_DIR/PSFoundation"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/FBSnapshotTestCase/FBSnapshotTestCase.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/PSFoundation/PSFoundation.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"sqlite3" -l"z" -framework "FBSnapshotTestCase" -framework "PSFoundation"
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PSFoundation"
+LIBRARY_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/PSFoundation"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PSFoundation"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"PSFoundation" -l"sqlite3" -l"z" -framework "Foundation"
 PODS_ROOT = ${SRCROOT}/Pods

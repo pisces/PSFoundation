@@ -1,4 +1,4 @@
-use_frameworks!
+#use_frameworks!
 
 target 'PSFoundation_Example' do
   pod 'PSFoundation', :path => '../'
@@ -6,6 +6,4 @@ end
 
 target 'PSFoundation_Tests' do
   pod 'PSFoundation', :path => '../'
-
-  pod 'FBSnapshotTestCase'
 end
