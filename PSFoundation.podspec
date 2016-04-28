@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "PSFoundation"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of PSFoundation."
+  s.version          = "1.0.0"
+  s.summary          = "PSFoundation"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,24 +17,28 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "PSFoundation is base library to build iOS application."
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PSFoundation"
+  s.homepage         = "https://github.com/pisces/PSFoundation"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "pisces" => "hh963103@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PSFoundation.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/pisces/PSFoundation.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PSFoundation/Classes/**/*'
+
   s.resource_bundles = {
-    'PSFoundation' => ['PSFoundation/Assets/*.png']
+   'PSFoundation' => ['PSFoundation/Assets/*']
   }
 
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation', 'CoreData'
+
+  s.xcconfig = {
+    'OTHER_LDFLAGS' => '$(inherited) -ObjC -lsqlite3 -lz'
+  }
 end
