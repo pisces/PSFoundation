@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
 
   s.xcconfig = {
-    'OTHER_LDFLAGS' => '$(inherited) -ObjC -lsqlite3 -lz'
+    'OTHER_LDFLAGS' => '$(inherited) -ObjC -lsqlite3 -lz',
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }
 end
