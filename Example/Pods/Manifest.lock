@@ -1,5 +1,5 @@
 PODS:
-  - PSFoundation (1.0.1)
+  - PSFoundation (1.0.2)
 
 DEPENDENCIES:
   - PSFoundation (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PSFoundation: 80ba090b4e24a50c3bfde1d29eef48a98d908d19
+  PSFoundation: b698a314bcdc0d78a33fb15faf86b21614bf704e
 
 PODFILE CHECKSUM: fc0e466bfb48eb5fbabf7675a7d7dff5431ea7a7
 
