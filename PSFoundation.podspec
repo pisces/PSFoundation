@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PSFoundation"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "PSFoundation"
 
 # This description is used to generate tags and improve search results.
@@ -24,22 +24,16 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "pisces" => "hh963103@gmail.com" }
   s.source           = { :git => "https://github.com/pisces/PSFoundation.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '7.0'
 
   s.source_files = 'PSFoundation/Classes/**/*'
-#  s.module_map = "module/module.modulemap"
+  s.frameworks = 'Foundation'
   s.resource_bundles = {
    'PSFoundation' => ['PSFoundation/Assets/*']
   }
 
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'Foundation'
-
   s.xcconfig = {
-    'OTHER_LDFLAGS' => '$(inherited) -ObjC -lsqlite3 -lz',
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+    'OTHER_LDFLAGS' => '$(inherited) -ObjC'
   }
 end
