@@ -1,16 +1,14 @@
 PODS:
-  - PSFoundation (1.0.2)
+  - PSFoundation (1.0.3)
 
 DEPENDENCIES:
   - PSFoundation (from `../`)
 
 EXTERNAL SOURCES:
   PSFoundation:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  PSFoundation: b698a314bcdc0d78a33fb15faf86b21614bf704e
+  PSFoundation: b9e94c4279bac37b87529384da601e04c5ed0952
 
-PODFILE CHECKSUM: fc0e466bfb48eb5fbabf7675a7d7dff5431ea7a7
-
-COCOAPODS: 1.0.0.beta.8
+COCOAPODS: 0.39.0
