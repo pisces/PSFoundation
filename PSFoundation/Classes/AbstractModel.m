@@ -87,7 +87,7 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     });
 }
 
-- (id)format:(id)value forKey:(NSString *)key {
+- (instancetype)format:(id)value forKey:(NSString *)key {
     id orgValue = [self valueForKey:key];
     
     if ([orgValue isKindOfClass:[NSNumber class]]) {
@@ -208,7 +208,7 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     return [self.sourceObject description];
 }
 
-- (id)unformat:(id)value forKey:(NSString *)key {
+- (instancetype)unformat:(id)value forKey:(NSString *)key {
     return value;
 }
 
