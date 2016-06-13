@@ -9,7 +9,6 @@
 #import "BaseObject.h"
 #import <objc/runtime.h>
 
-
 extern NSString *const kModelDidChangePropertiesNotification;
 extern NSString *const kModelDidSynchronizeNotification;
 
@@ -35,7 +34,7 @@ extern NSString *const kModelDidSynchronizeNotification;
 - (void)synchronizeSource;
 - (NSString *)toString;
 - (NSString *)toSourceString;
-- (instancetype)unformat:(id)value forKey:(NSString *)key;
+- (id)unformat:(id)value forKey:(NSString *)key;
 - (void)updateProperties:(NSDictionary *)dictionary;
 @end
 
