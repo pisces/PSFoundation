@@ -25,6 +25,7 @@ extern NSString *const kModelDidSynchronizeNotification;
 - (void)equals:(AbstractModel *)other block:(void(^)(BOOL equal))block;
 - (id)format:(id)value forKey:(NSString *)key;
 - (id)initWithObject:(id)object;
+- (id)initWithObject:(id)object encode:(BOOL)encode;
 - (BOOL)isEqualToModel:(AbstractModel *)other;
 - (void)setProperties:(id)object;
 - (void)synchronize:(AbstractModel *)other;
