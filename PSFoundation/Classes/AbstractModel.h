@@ -13,6 +13,7 @@ extern NSString *const kModelDidChangePropertiesNotification;
 extern NSString *const kModelDidSynchronizeNotification;
 
 @interface AbstractModel : BaseObject
+@property (nonatomic) BOOL encode;
 @property (nonatomic, readonly) NSDictionary *dictionary;
 @property (nonatomic, readonly) NSDictionary *sourceObject;
 - (id)childWithArray:(NSArray *)array classType:(Class)classType;

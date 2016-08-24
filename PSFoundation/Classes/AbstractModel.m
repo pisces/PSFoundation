@@ -13,7 +13,6 @@ NSString *const kModelDidChangePropertiesNotification = @"kModelDidChangePropert
 NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotification";
 
 @interface AbstractModel ()
-@property (nonatomic) BOOL encode;
 @property (readwrite, strong) NSDictionary *sourceObject;
 @end
 
@@ -92,6 +91,7 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     
     for (NSString *key in properties) {
         if ([key isEqualToString:@"sourceObject"] ||
+            [key isEqualToString:@"encode"] ||
             (excludes && [excludes indexOfObject:key] != NSNotFound))
             continue;
         
