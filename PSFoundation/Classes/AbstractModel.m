@@ -28,6 +28,31 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     self.sourceObject = nil;
 }
 
+/**
+ * @constructor
+ */
+- (instancetype)initWithObject:(id)object {
+    self = [super init];
+    
+    if (self) {
+        [self setProperties:object];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithObject:(id)object encode:(BOOL)encode {
+    self = [super init];
+    
+    if (self) {
+        _encode = encode;
+        
+        [self setProperties:object];
+    }
+    
+    return self;
+}
+
 - (id)body {
     return nil;
 }
@@ -66,6 +91,7 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
     
     for (NSString *key in properties) {
         if ([key isEqualToString:@"sourceObject"] ||
+            [key isEqualToString:@"encode"] ||
             (excludes && [excludes indexOfObject:key] != NSNotFound))
             continue;
         
@@ -90,8 +116,10 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
 - (id)format:(id)value forKey:(NSString *)key {
     NSString *typeString = [self typeStringOfPropertyNamed:key];
     
-    if ([@"NSString" isEqualToString:typeString])
-        return [NSString stringWithFormat:@"%@", value];
+    if ([@"NSString" isEqualToString:typeString]) {
+        NSString *string = [NSString stringWithFormat:@"%@", value];
+        return _encode ? string.decode : string;
+    }
     
     if ([typeString isEqualToString:@"c"] ||
         [typeString isEqualToString:@"B"])
@@ -125,18 +153,6 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
         return @([value doubleValue]);
     
     return value;
-}
-
-/**
- * @constructor
- */
-- (instancetype)initWithObject:(id)object {
-    self = [super init];
-    
-    if (self)
-        [self setProperties:object];
-    
-    return self;
 }
 
 - (BOOL)isEqualToModel:(AbstractModel *)other {
@@ -202,6 +218,10 @@ NSString *const kModelDidSynchronizeNotification = @"kModelDidSynchronizeNotific
 }
 
 - (id)unformat:(id)value forKey:(NSString *)key {
+    if ([value isKindOfClass:[NSString class]]) {
+        NSString *string = (NSString *) value;
+        return _encode ? string.encode : string;
+    }
     return value;
 }
 
